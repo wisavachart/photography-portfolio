@@ -1,3 +1,30 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.check {
+  border: 1px solid red;
+}
+
+@font-face {
+  font-family: "Popfun";
+  src: url("./assets/fonts/popfun.otf") format("opentype");
+}
+@font-face {
+  font-family: "AndersonGrotesk";
+  src: url("./assets/fonts/AndersonGrotesk.otf") format("opentype");
+}
+@font-face {
+  font-family: "AndersonGroteskBold";
+  src: url("./assets/fonts/AndersonGroteskBold.otf") format("opentype");
+}
+@font-face {
+  font-family: "AndersonGroteskLightOblique";
+  src: url("./assets/fonts/AndersonGroteskLightOblique.otf") format("opentype");
+}
