@@ -28,3 +28,7 @@
   font-family: "AndersonGroteskLightOblique";
   src: url("./assets/fonts/AndersonGroteskLightOblique.otf") format("opentype");
 }
+
+.fontLine {
+  line-height: 0;
+}
