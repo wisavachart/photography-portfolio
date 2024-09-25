@@ -3,6 +3,9 @@ export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     extend: {
+      aspectRatio: {
+        "3/4": "3 / 4",
+      },
       fontFamily: {
         popfun: ["Popfun", "sans-serif"],
         andersonR: ["AndersonGrotesk", "sans-serif"],
@@ -12,6 +15,10 @@ export default {
       colors: {
         yzz_blue: "#0E4194",
         yzz_green: "#25F09C",
+      },
+      screens: {
+        max_mb: "640px",
+        desktop: "1300px",
       },
     },
   },

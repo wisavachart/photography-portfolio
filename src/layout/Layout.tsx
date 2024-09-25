@@ -1,11 +1,13 @@
 import { Outlet } from "react-router-dom";
 import Navbar from "../components/navbar/navbar";
+import FooterMenu from "../components/footerMenu/FooterMenu";
 
 const Layout = () => {
   return (
-    <div className="flex flex-col justify-between h-screen">
+    <div className="h-screen w-screen flex flex-col justify-between">
       <Navbar />
       <Outlet />
+      <FooterMenu />
     </div>
   );
 };
