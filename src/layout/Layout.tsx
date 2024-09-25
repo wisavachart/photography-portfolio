@@ -4,11 +4,13 @@ import FooterMenu from "../components/footerMenu/FooterMenu";
 
 const Layout = () => {
   return (
-    <div className="h-screen w-screen flex flex-col justify-between">
-      <Navbar />
-      <Outlet />
-      <FooterMenu />
-    </div>
+    <>
+      <div className="h-screen w-screen flex flex-col justify-between">
+        <Navbar />
+        <Outlet />
+        <FooterMenu />
+      </div>
+    </>
   );
 };
 
