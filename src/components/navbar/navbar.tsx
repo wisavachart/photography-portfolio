@@ -1,15 +1,15 @@
-import { useState } from "react";
 import Menu from "../menu/Menu";
+import useMenuState from "../../store/menuState";
 
 const Navbar = () => {
-  const [isMenuOpen, setIsmenuOpen] = useState<boolean>(false);
+  const { isMenuOpen, setIsMenuOpen } = useMenuState();
   const handleClick = () => {
-    setIsmenuOpen(true);
+    setIsMenuOpen();
   };
   return (
     <>
-      {isMenuOpen && <Menu />}
-      <div className="flex justify-between items-center px-4 py-1">
+      {/* {isMenuOpen && <Menu />} */}
+      <div className="relative flex justify-between items-center px-4 py-1 z-20">
         <h6 className="font-popfun text-[28px]   text-yzz_blue cursor-pointer">
           yzz
         </h6>

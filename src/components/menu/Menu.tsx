@@ -1,6 +1,9 @@
+import useMenuState from "../../store/menuState";
+
 const Menu = () => {
+  const { setIsMenuOpen } = useMenuState();
   const handleClick = () => {
-    console.log("yzz Click");
+    setIsMenuOpen();
   };
   return (
     <div className="bg-yzz_blue w-screen h-screen px-4 flex flex-col justify-between absolute z-50 top-0">
