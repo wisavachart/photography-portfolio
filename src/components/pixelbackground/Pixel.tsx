@@ -30,9 +30,24 @@ const PixelBackground = () => {
     }),
   };
 
+  const getFactor = (screenWidth: number) => {
+    let factor = 0.05;
+    if (screenWidth >= 1024 && screenWidth <= 1339) {
+      factor = 0.03;
+    } else if (screenWidth >= 1440 && screenWidth <= 1559) {
+      factor = 0.02;
+    } else if (screenWidth >= 1600) {
+      factor = 0.015;
+    } else {
+      factor = 0.05;
+    }
+    return factor;
+  };
+
   const getBlocks = () => {
     const { innerHeight, innerWidth } = window;
-    const blockSize = innerWidth * 0.05;
+    const factor = getFactor(innerWidth);
+    const blockSize = innerWidth * factor;
     const amountOfBlocks = Math.ceil(innerHeight / blockSize);
     const delay = shuffle([...Array(amountOfBlocks)].map((_, i) => i));
     return delay.map((randomDelay: any, i: any) => {

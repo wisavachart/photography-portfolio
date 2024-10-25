@@ -8,7 +8,7 @@ const Navbar = () => {
   };
   return (
     <>
-      {/* {isMenuOpen && <Menu />} */}
+      {isMenuOpen && <Menu />}
       <div className="relative flex justify-between items-center px-4 py-1 z-20">
         <h6 className="font-popfun text-[28px]   text-yzz_blue cursor-pointer">
           yzz

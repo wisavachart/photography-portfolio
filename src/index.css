@@ -2,22 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-::-webkit-scrollbar {
-  display: none;
-}
-
-.check {
-  border: 1px solid red;
-}
-
 @font-face {
   font-family: "Popfun";
-  src: url("./assets/fonts/popfun.otf") format("opentype");
+  src: url("./assets/fonts/POPFUN.woff2") format("woff2");
 }
 @font-face {
   font-family: "AndersonGrotesk";
@@ -30,8 +17,4 @@
 @font-face {
   font-family: "AndersonGroteskLightOblique";
   src: url("./assets/fonts/AndersonGroteskLightOblique.otf") format("opentype");
-}
-
-.fontLine {
-  line-height: 0;
 }
